@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简约图片展示页面</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .image-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+
+  .image-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-card p {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .footer {
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="image-card">
+    <img src="image1.jpg" alt="图片1">
+    <p>这里是图片1的描述。</p>
+  </div>
+  <div class="image-card">
+    <img src="image2.jpg" alt="图片2">
+    <p>这里是图片2的描述。</p>
+  </div>
+  <div class="image-card">
+    <img src="image3.jpg" alt="图片3">
+    <p>这里是图片3的描述。</p>
+  </div>
+
+
+  <div class="image-card">
+    <img src="image1.jpg" alt="图片1">
+    <p>这里是图片1的描述。</p>
+  </div>
+  <div class="image-card">
+    <img src="image2.jpg" alt="图片2">
+    <p>这里是图片2的描述。</p>
+  </div>
+  <div class="image-card">
+    <img src="image3.jpg" alt="图片3">
+    <p>这里是图片3的描述。</p>
+  <!-- 添加更多图片卡片 -->
+</div>
+<div class="footer">
+  <p>版权所有 &copy; 2024 你的网站</p>
+</div>
+</body>
+</html>

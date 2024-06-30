@@ -1,0 +1,243 @@
+nav {
+  background-color: rgba(255, 255, 255, 0);
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 2px 0 2px 0;
+  display: flex;
+}
+
+a {
+  margin: 2px 5px 2px 5px;
+  text-decoration: none;
+  color: azure;
+  padding: 3px 30px 3px 30px;
+  border-radius: 6px;
+  display: block;
+}
+
+a:hover {
+  background-color: azure;
+  color: chocolate;
+}
+
+.logo1 {
+  display: inline-block;
+  line-height: 30px;
+  position: left;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  padding-left: 50px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+ul li {
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  float: left;
+}
+
+ul li ul {
+  position: absolute;
+  left: 15px;
+  top: 40px;
+  display: none;
+  padding-left: 0;
+}
+
+ul li ul li {
+  float: none;
+  background-color: #01000088;
+}
+
+ul li ul li a:hover {
+  background-color: rgb(35, 129, 129);
+  color: rgb(108, 56, 56);
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+nav>span {
+  width: 15%;
+}
+
+.logo {
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  display: flex;
+}
+
+.logo-img {
+  height: 132px;
+  margin: 0 20px 0 20px;
+}
+
+.search {
+  padding: 10px 0;
+  margin-top: 40px;
+  margin-left: 5%;
+  width: 50%;
+  max-width: 600px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 220px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px 10px 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(236, 117, 47);
+  transform: scale(1.1);
+  transition: all .2s;
+}
+
+.card>img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.card>.card-text {
+  padding: 5px 10px 10px 5px;
+  text-align: center;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 50px 0;
+}
+
+
+.big {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cfcfcf00;
+}
+
+.content>.main {
+  width: 70%;
+  padding-top: 30px;
+  background-color: rgba(177, 205, 188, 0.525);
+}
+
+.main-head {
+  border: 1px 0 1px 0;
+  border-top: orange solid;
+  border-bottom: orange solid;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-head>div>h1 {
+  color: red;
+  margin-bottom: -20px;
+  margin-left: 50px;
+}
+
+.main-head>video {
+  /* margin-left: 50%; */
+  width: 40%;
+}
+
+.main-head>div>p {
+  word-wrap: break-word;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+footer {
+  border-top: rgb(206, 205, 205) solid 1px;
+  text-align: center;
+  font-size: small;
+  color: black;
+  background-color: rgba(177, 205, 188, 0.525);
+  padding: 10px 0 10px 0;
+}
+
+/*动态搜索框*/
+.a {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2f364000;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.a:hover .b {
+  width: 200px;
+  padding: 0 6px;
+}
+
+.a:hover .c {
+  background-color: rgba(245, 222, 179, 0);
+}
+
+.b {
+  border: none;
+  background: none;
+  /* 取消选中搜索框时的外边框 */
+  outline: none;
+  width: 0;
+  padding: 0;
+  transition: .4s;
+  line-height: 40px;
+  font-size: 20px;
+  color: wheat;
+}
+
+.c {
+  color: #e9421808;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2f364000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+.background{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 180%;
+  object-fit: fill;
+}

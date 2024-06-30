@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: 
+    linear-gradient(90deg,rgba(25,195,96,0.525)),rgb(177,205,188);
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .image-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+
+  .image-card:hover {
+    transform: translateY(-10px);
+  }
+
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-card p {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .footer {
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    position:relative;
+    left:100%;
+  }
+
+  h1{
+    font-size:80px;
+    text-shadow: 1px 1px 10px rgba(42,72,209,0.525),1px 1px 13px rgb(11,211,91);
+    
+  }
+
+  .container span{
+    background: linear-gradient(to right,#6224cc,#e11b5d)no-repeat left bottom;
+    background-size: 0 2px;
+    transition: background-size 1s;
+    
+  }
+  .container .image-card:hover span{
+    background-size: 100% 2px;
+    color: orange;
+  }

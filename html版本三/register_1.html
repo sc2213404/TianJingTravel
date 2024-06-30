@@ -1,0 +1,105 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>注册</title>  
+    <script src="register.js" defer></script>  
+</head>  
+<style>  
+    .title-wrapper {  
+        text-align: center;    
+        background-color: aquamarine; /* 浅灰色背景 */  
+        border-radius: 50px; /* 圆角 */   
+    }  
+    body {  
+        background-color: aquamarine;
+        font-family: Arial, sans-serif;  
+        margin: 0;  
+        padding: 20px;  
+       
+    }  
+
+    h1 {  
+        text-align: center;  
+        color: #333;  
+        
+    }  
+
+    form {  
+        display: flex;  
+        flex-direction: column;  
+        align-items: center;  
+        max-width: 300px;  
+        margin: 0 auto;  
+        padding: 20px;  
+        background-color: #fff;  
+        border-radius: 5px;  
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        margin-bottom: 0;
+    }  
+
+    label {  
+        display: block;  
+        margin-bottom: 5px;  
+        font-weight: bold;  
+    }  
+
+    input[type="text"],  
+    input[type="password"] {  
+        width: 100%;  
+        padding: 10px;  
+        margin-bottom: 15px;  
+        border-radius: 3px;  
+        border: 1px solid #ccc;  
+    }  
+
+    input[type="submit"] {  
+        width: 100%;  
+        padding: 10px;  
+        background-color: #4CAF50;  
+        color: #fff;  
+        border: none;  
+        border-radius: 3px;  
+        cursor: pointer;  
+    }  
+
+    input[type="submit"]:hover {  
+        background-color: #323532;  
+    }  
+
+    #registerMessage {  
+        text-align: center;  
+        margin-top: 10px;  
+        color: #666;  
+    }  
+    #canvas {
+    margin-top: 0; 
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  p{
+    margin-top: 0; 
+    margin-bottom: 0; 
+  }
+</style>  
+<body>  
+    <div class="title-wrapper">  
+        <h1>注册新用户</h1>  
+    </div>  
+    <form id="registerForm">  
+        <label for="username">用户名:</label>  
+        <input type="text" id="username" required><br>  
+  
+        <label for="password">密码:</label>  
+        <input type="password" id="password" required><br>  
+  
+        <input type="submit" value="注册">  
+    </form>  
+    <p id="registerMessage"></p> 
+    <canvas id="canvas"> <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js'></script><script src="./register.js"></script> </canvas>
+    
+     
+</body>  
+</html>
